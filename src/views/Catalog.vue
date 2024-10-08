@@ -10,19 +10,6 @@
   })
 </script>
 
-<script setup>
-import { onMounted } from "vue";
-import {productsStore} from "@/stores/products.js";
-
-  const productStore = productsStore();
-
-  onMounted(() => {
-    console.log('MOUNTED >>>>>>')
-
-    productStore.fetchProductsFromDB()
-  })
-
-</script>
 
 <style>
   h1 {
